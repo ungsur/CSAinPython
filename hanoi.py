@@ -14,9 +14,12 @@ class Stack:
 def main():
     num_discs = 3
     tower_a = Stack()
+    tower_b = Stack()
+    tower_c = Stack()
     for i in range(1, num_discs + 1):
         tower_a.push(i)
     print(tower_a)
-    
+
+
 if __name__ == '__main__':
     main()
