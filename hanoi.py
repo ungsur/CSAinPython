@@ -16,6 +16,7 @@ def main():
     tower_a = Stack()
     tower_b = Stack()
     tower_c = Stack()
+    tower_d = Stack()
     for i in range(1, num_discs + 1):
         tower_a.push(i)
     print(tower_a)
