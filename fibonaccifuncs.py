@@ -38,13 +38,26 @@ def fib5(n):
         last, next = next, last + next
         yield next
 
+
+def fib6(n):
+    memo = [0,1,1,]
+    if n <= 2:
+        return 1
+    for i in range(2,n+1):
+        memo.append(memo[i-1] + memo[i-2])
+    return memo[n]
+
+
 def main():
     print(fib1(30))
     print(fib2(30))
     print(fib3(30))
     print(fib4(30))
-    for i in (fib5(30)):
-        print(i)
-    
+    #for i in (fib5(30)):
+    #    print(i)
+    print(list(fib5(30)))
+    print(fib6(30))
+
+
 if __name__ == '__main__':
     main()
